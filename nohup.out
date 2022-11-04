@@ -1,0 +1,79 @@
+Error: Could not find or load main class Dprefix=>
+Caused by: java.lang.ClassNotFoundException: Dprefix=>
+[03:58:24] [INFO] [JMusicBot]: Loaded config from /root/Discord-bot/config.txt
+[03:58:24] [ERROR] [JMusicBot]: Could not start GUI. If you are running on a server or in a location where you cannot display a window, please run in nogui mode using the -Dnogui=true flag.
+[03:58:25] [INFO] [JDA]: Login Successful!
+[03:58:25] [INFO] [WebSocketClient]: Connected to WebSocket
+[03:58:26] [INFO] [JDA]: Finished Loading!
+[05:19:59] [ERROR] [LocalAudioTrackExecutor]: Error in playback of 5Eqb_-j3FDA
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:44)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:116)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:348)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
+  lavaplayer.version: 1.3.78
+  os.arch: amd64
+  os.name: Linux
+  os.version: 5.15.0-41-generic
+  java.vendor: Ubuntu
+  java.version: 11.0.16
+  java.runtime.version: 11.0.16+8-post-Ubuntu-0ubuntu122.04
+  java.vm.version: 11.0.16+8-post-Ubuntu-0ubuntu122.04
+Caused by: java.lang.RuntimeException: Not success status code: 403
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.validateStatusCode(PersistentHttpStream.java:87)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.attemptConnect(PersistentHttpStream.java:116)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.connect(PersistentHttpStream.java:105)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.internalRead(PersistentHttpStream.java:150)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.read(PersistentHttpStream.java:166)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaEbmlReader.readEbmlInteger(MatroskaEbmlReader.java:39)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaFileReader.readNextElement(MatroskaFileReader.java:45)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.readFile(MatroskaStreamingFile.java:78)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.loadMatroskaFile(MatroskaAudioTrack.java:51)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.process(MatroskaAudioTrack.java:34)
+	at com.sedmelluq.discord.lavaplayer.track.DelegatedAudioTrack.processDelegate(DelegatedAudioTrack.java:25)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStatic(YoutubeAudioTrack.java:57)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:49)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:104)
+	... 4 common frames omitted
+[05:20:32] [WARN] [RateLimiter]: Encountered 429 on route PATCH/channels/{channel_id} with bucket 9852e1a53c06ffc5a89d65fef85ca4ce:channel_id=1024000031776329800 Retry-After: 566000 ms
+[04:44:59] [ERROR] [LocalAudioTrackExecutor]: Error in playback of 5Eqb_-j3FDA
+com.sedmelluq.discord.lavaplayer.tools.FriendlyException: Something broke when playing the track.
+	at com.sedmelluq.discord.lavaplayer.tools.ExceptionTools.wrapUnfriendlyExceptions(ExceptionTools.java:44)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:116)
+	at com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager.lambda$executeTrack$1(DefaultAudioPlayerManager.java:348)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: com.sedmelluq.discord.lavaplayer.tools.exception.EnvironmentInformation: 
+  lavaplayer.version: 1.3.78
+  os.arch: amd64
+  os.name: Linux
+  os.version: 5.15.0-41-generic
+  java.vendor: Ubuntu
+  java.version: 11.0.16
+  java.runtime.version: 11.0.16+8-post-Ubuntu-0ubuntu122.04
+  java.vm.version: 11.0.16+8-post-Ubuntu-0ubuntu122.04
+Caused by: java.lang.RuntimeException: Not success status code: 403
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.validateStatusCode(PersistentHttpStream.java:87)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.attemptConnect(PersistentHttpStream.java:116)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.connect(PersistentHttpStream.java:105)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.internalRead(PersistentHttpStream.java:150)
+	at com.sedmelluq.discord.lavaplayer.tools.io.PersistentHttpStream.read(PersistentHttpStream.java:166)
+	at java.base/java.io.DataInputStream.readByte(DataInputStream.java:270)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaEbmlReader.readEbmlInteger(MatroskaEbmlReader.java:39)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.format.MatroskaFileReader.readNextElement(MatroskaFileReader.java:45)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaStreamingFile.readFile(MatroskaStreamingFile.java:78)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.loadMatroskaFile(MatroskaAudioTrack.java:51)
+	at com.sedmelluq.discord.lavaplayer.container.matroska.MatroskaAudioTrack.process(MatroskaAudioTrack.java:34)
+	at com.sedmelluq.discord.lavaplayer.track.DelegatedAudioTrack.processDelegate(DelegatedAudioTrack.java:25)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.processStatic(YoutubeAudioTrack.java:57)
+	at com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioTrack.process(YoutubeAudioTrack.java:49)
+	at com.sedmelluq.discord.lavaplayer.track.playback.LocalAudioTrackExecutor.execute(LocalAudioTrackExecutor.java:104)
+	... 4 common frames omitted
+[04:45:10] [WARN] [RateLimiter]: Encountered 429 on route PATCH/channels/{channel_id} with bucket 9852e1a53c06ffc5a89d65fef85ca4ce:channel_id=1024873684743245944 Retry-After: 588000 ms
+[09:46:24] [WARN] [RateLimiter]: Encountered 429 on route PATCH/channels/{channel_id} with bucket 9852e1a53c06ffc5a89d65fef85ca4ce:channel_id=1024873684743245944 Retry-After: 497000 ms
+[05:52:26] [WARN] [RateLimiter]: Encountered 429 on route PATCH/channels/{channel_id} with bucket 9852e1a53c06ffc5a89d65fef85ca4ce:channel_id=1024873684743245944 Retry-After: 385000 ms
